@@ -1,0 +1,136 @@
+.layout {
+    color: $grey3;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+
+    header {
+        height: 141px;
+
+        &::before {
+            content: "";
+            background: $yellow;
+            height: 4px;
+            display: block;
+            width: 100%;
+        }
+
+        &>div {
+            display: flex;
+            height: 80px;
+
+            .settings {
+                li {
+                    display: inline;
+                }
+            }
+        }
+
+        nav {
+            ul {
+                li {
+                    display: inline;
+                }
+            }
+        }
+    }
+
+    section {
+        display: flex;
+        flex: 1;
+
+        aside {
+            background: $grey2;
+            width: 263px;
+        }
+
+        article {
+            background: $grey1;
+            padding: 20px;
+
+            h1 {
+                margin-bottom: 20px;
+                line-height: 42px;
+                font-size: 32px;
+                font-weight: 600;
+                font-family: $montserrat;
+            }
+
+            h2 {
+                margin-bottom: 10px;
+                line-height: 30px;
+                font-weight: 700;
+                size: 24px;
+                font-family: $nunito;
+            }
+
+            .articles-thumb {
+                display: flex;
+
+                .article-thumb {
+                    background: $white;
+                    border-radius: 10px;
+                    margin-right: 10px;
+                    padding: 10px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    .title {
+                        text-align: center;
+                        display: block;
+                    }
+
+                    & > p {
+                        margin-bottom: 10px;
+                    }
+
+                    .cta {
+                        text-align: center;
+                        margin-bottom: 10px;
+                        box-sizing:border-box;
+
+                        a {
+                            background: $yellow;
+                            border-radius: 3px;
+                            text-decoration: none;
+                            padding: 5px;
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 91px;
+
+        &::after {
+            content: "";
+            background: $yellow;
+            height: 4px;
+            display: block;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+
+            ul {
+                align-items: center;
+
+                li {
+                    display: inline;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "test-inte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/all.scss   public/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smaurier/test-inte.git"
+  },
+  "author": "Sylvain Maurier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smaurier/test-inte/issues"
+  },
+  "homepage": "https://github.com/smaurier/test-inte#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6"
+  }
+}
